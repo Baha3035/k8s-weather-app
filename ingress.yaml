@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: nginx
 spec:
-  ingressClassName: nginx
+  # ingressClassName: nginx
   rules:
   - host: weather-api.exchangeweb.net
     http:
