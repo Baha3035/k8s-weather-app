@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weather-app-backend
+  labels:
+    app: weather-app-backend
+spec:
+  replicas: 1    
+  selector:
+    matchLabels:
+      app: weather-app-backend
+  template:
+    metadata:
+      labels:
+        app: weather-app-backend
+    spec:
+      containers:
+        - name: weather-app-backend
+          image: notmiddev30/node-weather-app
+          ports:
+            - name: nodejs-port
+              containerPort: 3000
