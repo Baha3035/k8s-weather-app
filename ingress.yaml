@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: loopin.exchangeweb.net
+  - host: weather-api.exchangeweb.net
     http:
       paths:
       - backend:
